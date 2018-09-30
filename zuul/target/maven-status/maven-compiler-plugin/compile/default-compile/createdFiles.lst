@@ -1,0 +1,3 @@
+com/daicy/zuul/HelloController.class
+com/daicy/zuul/ZuulApplication.class
+com/daicy/zuul/filter/AccessFilter.class

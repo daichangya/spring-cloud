@@ -1,0 +1,6 @@
+spring:
+  application:
+    name: actuator
+  cloud:
+    config:
+      uri: http://localhost:8016/

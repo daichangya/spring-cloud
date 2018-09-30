@@ -1,0 +1,4 @@
+sms:
+  channel:
+    aliyun:
+      domain: dysmsapi.dddddd.com

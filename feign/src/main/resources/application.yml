@@ -1,0 +1,34 @@
+feign:
+  httpclient:
+    enabled: true
+    maxtotal: 200
+    defaultmaxperroute: 100
+    connecttimeout: 3000
+    connectionrequesttimeout: 2000
+    sockettimeout: 3000
+    #下面重新配置了一遍为了解决service中application.properties的兼容性问题。后续会移除上面全小写的部分。
+    maxTotal: 200
+    defaultMaxPerRoute: 100
+    connectTimeout: 3000
+    connectionRequestTimeout: 2000
+    socketTimeout: 3000
+  hystrix:
+    enabled: true
+
+hystrix:
+  threadpool:
+    default:
+      allowmaximum: true
+      coresize: 100
+      maxQueueSize: 100
+      keepalivetime: 10
+      maximumsize: 300
+  command:
+    default:
+      timeoutinmilliseconds: 5000
+#      execution:
+#        isolation:
+#          thread:
+#            timeoutInMilliseconds: 5000
+  metrics:
+    enabled: true
